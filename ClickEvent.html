@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: goldenrod;
+    }
+
+    .newStyle {
+      background-color: darkgray;
+    }
+  </style>
+</head>
+<body>
+<div id="box1" onclick="box_onclick()"></div>
+<script type="text/javascript">
+  // let box = document.getElementById("box1");
+  // box.onclick = function () {
+  //   box.className = (box.className == "" ? "newStyle" : "");
+  // }
+
+  // let box = document.getElementsByClassName("onebox")[0];
+  // box.onclick = function () {
+  //   box.className = (box.className == "" ? "newStyle" : "");
+  // }
+
+  let div = document.getElementsByTagName("div")[0];
+  // div.onclick = box_onclick;
+  function box_onclick(){
+    div.className = (div.className == "" ? "newStyle" : "");
+    div.style.width = "100px";
+  }
+
+</script>
+
+</body>
+</html>
